@@ -1,0 +1,33 @@
+# Rust build artifacts. `target/` matches every Cargo project here,
+# including future chapter_* exercises and their nested example projects.
+target/
+*.rs.bk
+*.pdb
+
+# Keep chapter_* source, Cargo.toml, and Cargo.lock tracked.
+
+# Locally compiled binaries (the hello_world example currently creates one)
+/hello_world/main
+*.exe
+
+# Editor and IDE metadata
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+
+# Local environment and logs
+.env
+.env.*
+!.env.example
+*.log
+
+# Coverage/profiling output
+*.profraw
+lcov.info
+tarpaulin-report.html
